@@ -1,11 +1,4 @@
-#include <stdio.h>
-
-// Deklarasi Fungsi (Akan diisi oleh Anggota 1-4)
-void konversiSuhu();   // Anggota 1
-void konversiJarak();  // Anggota 2
-void konversiBerat();  // Anggota 3
-void konversiWaktu();  // Anggota 4
-
+// ANGGOTA 4: KONVERSI WAKTU
 // ==========================================
 // KETUA KELOMPOK & ANGGOTA 5
 // Bagian: Menu Utama & Navigasi
@@ -66,3 +59,10 @@ void konversiJarak() {
     printf("Meter: %.2f m\n", km * 1000);
     printf("Centimeter: %.2f cm\n", km * 100000);
 } 
+void konversiWaktu() {
+    float jam;
+    printf("\n--- Konversi Waktu ---\n");
+    printf("Masukkan durasi dalam Jam: ");
+    scanf("%f", &jam);
+    printf("Menit: %.2f menit\n", jam * 60);
+    printf("Detik: %.2f detik\n", jam * 3600);}
