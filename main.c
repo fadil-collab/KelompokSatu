@@ -5,3 +5,4 @@ void konversiJarak() {
     scanf("%f", &km);
     printf("Meter: %.2f m\n", km * 1000);
     printf("Centimeter: %.2f cm\n", km * 100000);
+} 
