@@ -6,7 +6,7 @@ void konversiJarak();  // Akan diisi detailnya di bawah
 void konversiBerat() { printf("\nFitur belum dibuat oleh Anggota 3.\n"); }
 void konversiWaktu() { printf("\nFitur belum dibuat oleh Anggota 4.\n"); }
 
-// --- BAGIAN KAMU (Anggota 2) ---
+// --- BAGIAN Anggota 2 ---
 void konversiJarak() {
     float km;
     printf("\n--- Konversi Jarak ---\n");
@@ -14,14 +14,28 @@ void konversiJarak() {
     scanf("%f", &km);
     printf("Meter: %.2f m\n", km * 1000);
     printf("Centimeter: %.2f cm\n", km * 100000);
-} // <--- Tadi kamu lupa tutup kurung ini!
+} // 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+
+// ANGGOTA 3: KONVERSI BERAT
+// ==========================================
+void konversiBerat() {
+    float kg;
+    printf("\n--- Konversi Berat ---\n");
+    printf("Masukkan berat dalam Kilogram: ");
+    scanf("%f", &kg);
+    printf("Gram: %.2f g\n", kg * 1000);
+    printf("Pons (Lbs): %.2f lbs\n", kg * 2.20462);
+>>>>>>> origin/berat
 // ==========================================
 // KETUA KELOMPOK & ANGGOTA 5
 // Bagian: Menu Utama & Navigasi
 // ==========================================
+<<<<<<< HEAD
 
 // ==========================================
 // ANGGOTA 1: KONVERSI SUHU
@@ -37,6 +51,8 @@ void konversiSuhu() {
 }
 
 >>>>>>> origin/celcius
+=======
+>>>>>>> origin/berat
 int main() {
     int pilihan; // Deklarasi variabel pilihan agar tidak merah
 
