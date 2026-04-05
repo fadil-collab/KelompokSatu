@@ -1,17 +1,23 @@
 #include <stdio.h>
 
-// Deklarasi Fungsi (Akan diisi oleh Anggota 1-4)
-void konversiSuhu();   // Anggota 1
-void konversiJarak();  // Anggota 2
-void konversiBerat();  // Anggota 3
-void konversiWaktu();  // Anggota 4
+// Deklarasi Fungsi (Supaya main() tahu fungsi ini ada)
+void konversiSuhu() { printf("\nFitur belum dibuat oleh Anggota 1.\n"); }
+void konversiJarak();  // Akan diisi detailnya di bawah
+void konversiBerat() { printf("\nFitur belum dibuat oleh Anggota 3.\n"); }
+void konversiWaktu() { printf("\nFitur belum dibuat oleh Anggota 4.\n"); }
 
-// ==========================================
-// KETUA KELOMPOK & ANGGOTA 5
-// Bagian: Menu Utama & Navigasi
-// ==========================================
+// --- BAGIAN KAMU (Anggota 2) ---
+void konversiJarak() {
+    float km;
+    printf("\n--- Konversi Jarak ---\n");
+    printf("Masukkan jarak dalam Kilometer: ");
+    scanf("%f", &km);
+    printf("Meter: %.2f m\n", km * 1000);
+    printf("Centimeter: %.2f cm\n", km * 100000);
+} // <--- Tadi kamu lupa tutup kurung ini!
+
 int main() {
-    int pilihan;
+    int pilihan; // Deklarasi variabel pilihan agar tidak merah
 
     do {
         printf("\n================================\n");
