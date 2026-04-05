@@ -1,9 +1,13 @@
-// ANGGOTA 4: KONVERSI WAKTU
-// ==========================================
-// KETUA KELOMPOK & ANGGOTA 5
-// Bagian: Menu Utama & Navigasi
-// ==========================================
+#include <stdio.h>
+
+// Deklarasi Fungsi
+void konversiSuhu();   // Anggota 1
+void konversiJarak();  // Anggota 2
+void konversiBerat();  // Anggota 3
+void konversiWaktu();  // Anggota 4
+
 int main() {
+
     int pilihan;
 
     do {
