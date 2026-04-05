@@ -1,37 +1,28 @@
 #include <stdio.h>
 
-// Deklarasi Fungsi (Supaya main() tahu fungsi ini ada)
-void konversiSuhu() { printf("\nFitur belum dibuat oleh Anggota 1.\n"); }
-void konversiJarak();  // Akan diisi detailnya di bawah
-void konversiBerat() { printf("\nFitur belum dibuat oleh Anggota 3.\n"); }
-void konversiWaktu() { printf("\nFitur belum dibuat oleh Anggota 4.\n"); }
+// Deklarasi Fungsi (Akan diisi oleh Anggota 1-4)
+void konversiSuhu();   // Anggota 1
+void konversiJarak();  // Anggota 2
+void konversiBerat();  // Anggota 3
+void konversiWaktu();  // Anggota 4
 
-// --- BAGIAN Anggota 2 ---
-void konversiJarak() {
-    float km;
-    printf("\n--- Konversi Jarak ---\n");
-    printf("Masukkan jarak dalam Kilometer: ");
-    scanf("%f", &km);
-    printf("Meter: %.2f m\n", km * 1000);
-    printf("Centimeter: %.2f cm\n", km * 100000);
-} // 
-
-
-// ANGGOTA 3: KONVERSI BERAT
-// ==========================================
-void konversiBerat() {
-    float kg;
-    printf("\n--- Konversi Berat ---\n");
-    printf("Masukkan berat dalam Kilogram: ");
-    scanf("%f", &kg);
-    printf("Gram: %.2f g\n", kg * 1000);
-    printf("Pons (Lbs): %.2f lbs\n", kg * 2.20462);
 // ==========================================
 // KETUA KELOMPOK & ANGGOTA 5
 // Bagian: Menu Utama & Navigasi
 // ==========================================
+// ==========================================
+// ANGGOTA 4: KONVERSI WAKTU
+// ==========================================
+void konversiWaktu() {
+    float jam;
+    printf("\n--- Konversi Waktu ---\n");
+    printf("Masukkan durasi dalam Jam: ");
+    scanf("%f", &jam);
+    printf("Menit: %.2f menit\n", jam * 60);
+    printf("Detik: %.2f detik\n", jam * 3600);
+}
 int main() {
-    int pilihan; // Deklarasi variabel pilihan agar tidak merah
+    int pilihan;
 
     do {
         printf("\n================================\n");
